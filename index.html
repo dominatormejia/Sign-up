@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Log in Page</title>
+    <title>Sign up Page</title>
     <link rel="stylesheet" href="style.css" />
     <style src="javacript.js" defer></style>
   </head>
@@ -11,6 +11,19 @@
     <div class="wrapper">
       <h1>Sign Up</h1>
       <form>
+        <div>
+          <label for="firstName-input">
+            <img
+              src="svgs/person_24dp_E3E3E3_FILL1_wght400_GRAD0_opsz24.svg"
+              alt=""
+          /></label>
+          <input
+            type="text"
+            name="firstName"
+            id="firstName-input"
+            placeholder="First Name"
+          />
+        </div>
         <div>
           <label for="email-input"> @ </label>
           <input
@@ -34,9 +47,24 @@
             placeholder="Password"
           />
         </div>
-        <button>Log In</button>
+        <div>
+          <label for="repeat-password-input">
+            <img
+              src="svgs/lock_24dp_E3E3E3_FILL1_wght400_GRAD0_opsz24.svg"
+              alt=""
+            />
+          </label>
+
+          <input
+            type="password"
+            name="repeat-password"
+            id="repeat-password-input"
+            placeholder="Repeat Password"
+          />
+        </div>
+        <button>Sign Up</button>
       </form>
-      <p>Need to Make an Account? <a href="index.html">Sign up</a></p>
+      <p>Already have an account? <a href="log-in.html">Log in</a></p>
     </div>
   </body>
 </html>
